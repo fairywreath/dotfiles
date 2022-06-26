@@ -75,4 +75,4 @@ call plug#end()
 
 set termguicolors
 set t_Co=256
-colorscheme fairyfloss
+colorscheme strawberry-light

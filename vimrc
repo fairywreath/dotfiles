@@ -76,3 +76,10 @@ call plug#end()
 set termguicolors
 set t_Co=256
 colorscheme strawberry-light
+
+" remove trailing whitespace
+set wrap
+set linebreak
+" note trailing space at end of next line
+set showbreak=>\ \ \
+autocmd BufWritePre * :%s/\s\+$//e

@@ -46,6 +46,7 @@ set incsearch
 "keybindings
 "open term
 nnoremap <leader>t :term<CR>
+nnoremap <leader>e : NERDTree<CR>
 "spelling?
 nnoremap <leader>s :setlocal spell!<CR>
 

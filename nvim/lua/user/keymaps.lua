@@ -42,8 +42,10 @@ keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 keymap("v", "p", '"_dP', opts)
 
 -- Insert --
--- Press jk fast to enter
+-- Press jk or aa fast to enter(espace insert)
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "aa", "<ESC>", opts)
+
 
 -- Visual --
 -- Stay in indent mode
@@ -69,7 +71,7 @@ keymap("n", "<leader>/", "<cmd>lua require('Comment.api').toggle_current_linewis
 keymap("x", "<leader>/", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>')
 
 -- DAP
-keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts) 
+keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
 keymap("n", "<leader>dc", "<cmd>lua require'dap'.continue()<cr>", opts)
 keymap("n", "<leader>di", "<cmd>lua require'dap'.step_into()<cr>", opts)
 keymap("n", "<leader>do", "<cmd>lua require'dap'.step_over()<cr>", opts)

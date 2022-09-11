@@ -104,6 +104,9 @@ return packer.startup(function(use)
   use { "rcarriga/nvim-dap-ui", commit = "d76d6594374fb54abf2d94d6a320f3fd6e9bb2f7" }
   use { "ravenxrz/DAPInstall.nvim", commit = "8798b4c36d33723e7bba6ed6e2c202f84bb300de" }
 
+-- CPP
+use { "rhysd/vim-clang-format", commit = "6b791825ff478061ad1c57b21bb1ed5a5fd0eb29" }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

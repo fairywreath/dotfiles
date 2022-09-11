@@ -61,14 +61,16 @@ return packer.startup(function(use)
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
   use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
   use { "rose-pine/neovim", commit = "f739adcaf81ee8cba04b67d287b231c70416b779"}
-  use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
-    tag = 'v1.*',
-    config = function()
-        vim.cmd('colorscheme rose-pine')
-    end
-  })
+    -- use({
+  --   'rose-pine/neovim',
+  --   as = 'rose-pine',
+  --   tag = 'v1.*',
+  --   config = function()
+  --       vim.cmd('colorscheme rose-pine')
+  --   end
+  -- })
+  use{ "kyazdani42/blue-moon", commit = "02263fe9831211046a66112c290eb452d7815b86" }
+
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" } -- The completion plugin
   use { "hrsh7th/cmp-buffer", commit = "62fc67a2b0205136bc3e312664624ba2ab4a9323" } -- buffer completions

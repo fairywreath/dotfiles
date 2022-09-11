@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  ["blue-moon"] = {
+    loaded = true,
+    path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/blue-moon",
+    url = "https://github.com/kyazdani42/blue-moon"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -224,12 +229,6 @@ _G.packer_plugins = {
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -250,6 +249,11 @@ _G.packer_plugins = {
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-clang-format"] = {
+    loaded = true,
+    path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/vim-clang-format",
+    url = "https://github.com/rhysd/vim-clang-format"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/vim-illuminate",
@@ -258,10 +262,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
 if should_profile then save_profiles() end
 
 end)

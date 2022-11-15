@@ -46,7 +46,8 @@ set incsearch
 "keybindings
 "open term
 nnoremap <leader>t :term<CR>
-nnoremap <leader>e : NERDTree<CR>
+nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
 "spelling?
 nnoremap <leader>s :setlocal spell!<CR>
 
@@ -56,18 +57,39 @@ nnoremap <leader>p "*p
 nnoremap <leader>d "*d
 
 "insert escape
-inoremap aa  <Esc>
+"inoremap aa  <Esc>
+
+" better buffer navigation
+map <S-l> :bnext<CR>
+map <S-h> :bprev<CR>
+
+" better window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " plugins
 call plug#begin('~/.vim/plugged')
-Plug 'haystackandroid/strawberry'
+"  Plug 'haystackandroid/strawberry'
 Plug 'sts10/vim-pink-moon'
-Plug 'Shadorain/shadotheme'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'Shadorain/shadotheme'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'flazz/vim-colorschemes'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'machakann/vim-highlightedyank'
 Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdcommenter'
+
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'haishanh/night-owl.vim'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 call plug#end()
 
 " for tmux termguicolors not working?
@@ -76,7 +98,7 @@ call plug#end()
 
 set termguicolors
 set t_Co=256
-colorscheme strawberry-light
+colorscheme pink-moon
 
 " remove trailing whitespace
 set wrap
@@ -84,3 +106,8 @@ set linebreak
 " note trailing space at end of next line
 set showbreak=>\ \ \
 autocmd BufWritePre * :%s/\s\+$//e
+
+" vim-ariline settings
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='night_owl'

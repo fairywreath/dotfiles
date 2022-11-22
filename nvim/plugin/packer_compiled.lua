@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
   neovim = {
     loaded = true,
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/neovim",
@@ -219,6 +224,11 @@ _G.packer_plugins = {
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["pink-panic.nvim"] = {
+    loaded = true,
+    path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/pink-panic.nvim",
+    url = "https://github.com/scysta/pink-panic.nvim"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -228,6 +238,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
+  },
+  shadotheme = {
+    loaded = true,
+    path = "/home/dwihandi/.local/share/nvim/site/pack/packer/start/shadotheme",
+    url = "https://github.com/Shadorain/shadotheme"
   },
   ["telescope.nvim"] = {
     loaded = true,

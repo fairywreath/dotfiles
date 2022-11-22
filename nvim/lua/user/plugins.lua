@@ -61,6 +61,9 @@ return packer.startup(function(use)
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
   use { "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" }
   use { "rose-pine/neovim", commit = "f739adcaf81ee8cba04b67d287b231c70416b779"}
+  use { "rktjmp/lush.nvim" }
+  use { "scysta/pink-panic.nvim" }
+  use { 'Shadorain/shadotheme' }
     -- use({
   --   'rose-pine/neovim',
   --   as = 'rose-pine',

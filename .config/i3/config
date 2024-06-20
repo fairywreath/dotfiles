@@ -502,16 +502,22 @@ set $urgentred		#e53935
 set $white		#ffffff
 set $black		#000000
 set $purple		#e345ff
-set $darkgrey		#383c4a
+set $darkgrey		#494c50
 set $grey		#b0b5bd
 set $mediumgrey		#8b8b8b
 set $yellowbrown	#e1b700
 
+# Not really "light", but the lightest of all "pinks" used.
+set $lightpink		#b48ebf
+set $mediumpink		#897cad
+# Basically blue.
+set $darkpink		#6c6ca4
+
 # define colors for windows:
 #class		        	border		bground		text		indicator	child_border
-client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
-client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
+client.focused		    	$lightpink	$darkpink	$white		$mediumpink	$mediumpink
+client.unfocused	    	$darkpink	$darkpink	$grey		$darkgrey	$darkgrey
+client.focused_inactive		$darkpink	$darkpink	$grey		$black		$black
 client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
 ############################################
@@ -538,13 +544,13 @@ strip_workspace_numbers yes
 
 		    colors {
 		    separator          $purple
-		    background         $darkgrey
-		    statusline         $white
+		    background         $lightpink
+		    statusline         $black
 #                          		border 		        bg		txt		indicator
-		focused_workspace	$mediumgrey	   	$grey		$darkgrey	$purple
-		active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
-		inactive_workspace	$darkgrey   		$darkgrey	$grey		$purple
-		urgent_workspace	$urgentred	    	$urgentred	$white		$purple
+		focused_workspace	$lightpink		$grey		$black		$purple
+		active_workspace	$lightpink		$mediumgrey	$black		$purple
+		inactive_workspace	$lightpink   		$lightpink	$black		$purple
+		urgent_workspace	$urgentred	    	$urgentred	$black		$purple
 	}
 }
 

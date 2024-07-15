@@ -176,6 +176,8 @@ bindsym $mod+Return exec --no-startup-id kitty
 
 # kill focused window
 bindsym $mod+q kill
+# Close all windows on all workspaces (any class string)
+bindsym $mod+Shift+q [class=”.*”] kill
 
 # exit-menu
 bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
